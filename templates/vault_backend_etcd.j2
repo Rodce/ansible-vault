@@ -1,7 +1,7 @@
 backend "etcd" {
   address = "{{ vault_etcd }}"
   path = "{{ vault_etcd_path }}"
-  api = "{{ vault_etcd_api }}"
+  etcd_api = "{{ vault_etcd_api }}"
   request_timeout = "{{ vault_etcd_request_timeout }}"
   lock_timeout = "{{ vault_etcd_lock_timeout }}"
   sync = "{{ vault_etcd_sync }}"
